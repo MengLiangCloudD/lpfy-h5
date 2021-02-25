@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+    <meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=no">
+    <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate" />
+    <meta http-equiv="Pragma" content="no-cache" />
+    <meta http-equiv="Expires" content="0" />
+    <!-- <script src="//cdn.bootcss. com/eruda/1.5.2/eruda.min.js"></script> -->
+
+    <title>滦平县妇幼保健院诊疗平台</title>
+  </head>
+  <body>
+    <div id="app"></div>
+    <!-- built files will be auto injected -->
+  </body>
+  <script>
+    (function() {
+        if (typeof WeixinJSBridge == "object" && typeof WeixinJSBridge.invoke == "function") {
+            handleFontSize();
+        } else {
+            if (document.addEventListener) {
+                document.addEventListener("WeixinJSBridgeReady", handleFontSize, false);
+            } else if (document.attachEvent) {
+                document.attachEvent("WeixinJSBridgeReady", handleFontSize);
+                document.attachEvent("onWeixinJSBridgeReady", handleFontSize);  }
+        }
+        function handleFontSize() {
+            // 设置网页字体为默认大小
+            WeixinJSBridge.invoke('setFontSizeCallback', { 'fontSize' : 0 });
+            // 重写设置网页字体大小的事件
+            WeixinJSBridge.on('menu:setfont', function() {
+                WeixinJSBridge.invoke('setFontSizeCallback', { 'fontSize' : 0 });
+            });
+        }
+    })();
+    
+</script>
+<!-- <script>
+    eruda.init();
+    ;(function () {
+        var src = '//cdn.jsdelivr.net/npm/eruda';
+        if (!/eruda=true/.test(window.location) && localStorage.getItem('active-eruda') != 'true') return;
+        document.write('<scr' + 'ipt src="' + src + '"></scr' + 'ipt>');
+        document.write('<scr' + 'ipt>eruda.init();</scr' + 'ipt>');
+    })();
+    let el = document.createElement('div');
+    document.body.appendChild(el);
+    el.style.background = '#fff';
+    el.style.position= 'relative'; 
+    el.style.zIndex= '800'; 
+
+    eruda.init({
+        container: el,
+        tool: ['console', 'elements'],
+        useShadowDom: true
+    });
+</script> -->
+<div style="display:none">
+    <script type="text/javascript" src="https://s4.cnzz.com/z_stat.php?id=1278901801&web_id=1278901801"></script>
+</div>
+<!-- <script>
+    var _mtac = {"senseQuery":1};
+    (function() {
+     var mta = document.createElement("script");
+     mta.src = "//pingjs.qq.com/h5/stats.js?v2.0.4";
+     mta.setAttribute("name", "MTAH5");
+     mta.setAttribute("sid", "500719784");
+     mta.setAttribute("cid", "500719785");
+     var s = document.getElementsByTagName("script")[0];
+     s.parentNode.insertBefore(mta, s);
+    })();
+ </script> -->
+</html>
