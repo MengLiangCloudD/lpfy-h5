@@ -69,12 +69,12 @@ router.beforeEach((to,from,next)=>{
   }
   next()
   if(avatar==''||avatar==undefined){
-    // getCode();
+    getCode();
   }
   //判断有没有code有没有token去请求token
   if(code!=null&&code!==''){
     if(localStorage.getItem('avatar')==''||localStorage.getItem('avatar')==undefined||localStorage.getItem('token')==''||localStorage.getItem('token')==undefined){
-      // gettoken();
+      gettoken();
     }
   }
 })
