@@ -89,8 +89,8 @@ function checkStatus (response) {
     // 如果不需要除了data之外的数据，可以直接 return response.data
     if(response.data.errcode==1003){
       // history.go(0);
-      getCode();
-      gettoken();
+      // getCode();
+      // gettoken();
     }else{
       return response.data;
     }

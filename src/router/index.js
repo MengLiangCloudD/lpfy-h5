@@ -122,6 +122,12 @@ export default new Router({
       name: "Laboratorys",
       component: resolve=>(require(["@/components/user/usereContre/Laboratorys/Laboratorys"],resolve)),
     },
+    {
+      path: "/video",
+      name: "video",
+      component: resolve=>(require(["@/components/user/usereContre/video/video"],resolve)),
+    },
+    
     //我的药品处方
     {
       path: "/Myprescription",
