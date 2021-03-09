@@ -14,9 +14,9 @@ module.exports = {
       "/api": {
         //将www.exaple.com印射为/api
         // target: 'http://222.223.131.177:8889', //跨域地址
-        // target: 'http://222.223.131.177:8891/',
+        target: 'http://222.223.131.177:8891/',
         // target: 'http://192.168.0.102:8089', //跨域地址
-        target: 'http://192.168.0.110:8080', //跨域地址
+        // target: 'http://192.168.0.110:8080', //跨域地址
         // target:'http://222.223.131.177:8889',
         changeOrigin: true, //是否跨域
         secure: false, //是否使用https

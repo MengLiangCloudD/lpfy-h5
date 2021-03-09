@@ -418,15 +418,16 @@ export default {
   margin-left: 10px;
 }
 .doctor-info p {
-  font-size: 18px;
-  margin: 10px 0;
-      width: 100px;
+    font-size: 18px;
+    margin: 10px 0;
+      width: 23.66667vw;
     overflow: hidden;
     text-overflow: ellipsis;
     white-space: nowrap;
     /* margin-left: 53px; */
     display: inline-block;
-    margin-left: 20px;
+    margin-left: 14.33333vw;
+    text-align: left;
 }
 .line {
   border-bottom: 1px solid rgb(187, 187, 187);

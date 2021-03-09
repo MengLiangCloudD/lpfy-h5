@@ -9,7 +9,7 @@
         <div class="content" v-for="(item,index) in list" :key="index" @click="goContent(item)">
             <div class="content_item">
                 <p>{{item.name}}</p>
-                <p>{{item.content}}</p>
+                <!-- <p>{{item.content}}</p> -->
             </div>
         </div>
     </div>
