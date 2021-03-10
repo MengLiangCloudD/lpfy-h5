@@ -81,7 +81,7 @@ import http from '@/utils/http'
         },
         created() {
             //禁止分享按钮
-            wechatPay.hideAllNonBaseMenuItem();
+            // wechatPay.hideAllNonBaseMenuItem();
             if(location.hash.indexOf('ConsultHome')!=-1){
                 this.currentindex=0
             }

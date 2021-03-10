@@ -206,11 +206,12 @@ export default {
     localStorage.setItem('docCode',docCode);
     let depCode= this.$route.query.depCode;
     localStorage.setItem('depCode',depCode);
-    var url = `http://lpfy-h5-test.yhtcs.cn/#/appointment?depCode=${depCode}&docCode=${docCode}`
-      wechatPay.onMenuShareAppMessage(url).then(res=>{
-            alert("分享微信好友成功！");
-      });
+    // var url = `http://lpfy-h5-test.yhtcs.cn/#/appointment?depCode=${depCode}&docCode=${docCode}`
+    //   wechatPay.onMenuShareAppMessage(url).then(res=>{
+    //         alert("分享微信好友成功！");
+    //   });
   },
+   
   //在mounted钩子里去获取医生的信息 保存支付费用 存储号源编码
  async mounted() {
       var that = this;
@@ -536,6 +537,16 @@ export default {
         }
       }
     }
+  },
+  activated(){
+    let docCode = this.$route.query.docCode;
+    localStorage.setItem('docCode',docCode);
+    let depCode= this.$route.query.depCode;
+    localStorage.setItem('depCode',depCode);
+    var url = `http://lpfy-h5-test.yhtcs.cn/#/appointment?depCode=${depCode}&docCode=${docCode}`
+      wechatPay.onMenuShareAppMessage(url).then(res=>{
+            alert("分享微信好友成功！");
+      });
   }
 };
 </script>

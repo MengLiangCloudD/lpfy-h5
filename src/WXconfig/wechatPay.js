@@ -179,7 +179,7 @@ export default {
       });
     })
   },
-  //分享链接
+  //禁止分享的方法
   hideAllNonBaseMenuItem(){
     // return new Promise((resolve, reject) => {
       wx.ready(function() {
